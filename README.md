@@ -14,4 +14,4 @@
 <br>
 
 <h1>My Portfolio</h1>
-<a class="active" href="portfolio.html">Click Here to proceed to my Portfolio</a>
+<a href="portfolio.html">Click Here to proceed to my Portfolio</a>
