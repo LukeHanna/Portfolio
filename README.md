@@ -11,12 +11,7 @@
 <body>
 <br>
 
-
-<ul id="nav">
-  <li><a class="active" href="portfolio.html">Home</a></li>
-</ul>
-
 <br>
 
 <h1>My Portfolio</h1>
-<p>Please use the navigation bar to Proceed to my Portfolio</p>
+<a class="active" href="portfolio.html">Click Here to proceed to my Portfolio</a>
