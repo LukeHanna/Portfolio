@@ -1,0 +1,106 @@
+/*****************PAGES*************/
+/* ALL CSS code under this section was written by me */
+
+#head1 {						/* Sets the tylings for the <h1> tag */
+	display: block;
+	margin: 0 auto;
+	border:7px solid lightblue;
+	width:30%;
+	text-align: center;
+	color:white;
+	border-radius:2em 2em /2em 2em;
+	font-family:arial
+}
+
+body {						/* Sets the background stylings for the <body> tag */
+	background:#23236B;
+	background-size:100%;
+}
+
+video {						/* Sets the stylings for the <video> tag */
+display: block;
+margin: 0 auto;
+border:3px solid white;
+}
+
+
+/*********************NAVIGATION***********************/
+/* This section refers to the file under - "JQuery/Navigation/sliding_effect.js" & "JQuery/Navigation/jquery.js" */
+
+
+#navigation-block {
+position: relative;
+display: block;
+margin: 0 inherit;
+	top:-440px;
+}
+
+#hide {
+	position:absolute;
+	top:30px;
+	left:-190px;
+}
+
+ul#sliding-navigation
+{
+	list-style: none;
+	font-size: .75em;
+	margin: 30px 0;
+	padding: 0;
+}
+
+ul#sliding-navigation li.sliding-element h3,
+ul#sliding-navigation li.sliding-element a
+{
+	display: block;
+	width: 150px;
+	padding: 5px 18px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+ul#sliding-navigation li.sliding-element h3
+{
+	color: #fff;
+	background:#333 url(heading_bg.jpg) repeat-y;
+	font-weight: normal;
+}
+
+ul#sliding-navigation li.sliding-element a
+{
+	color: #999;
+	background:#222 url(tab_bg.jpg) repeat-y;
+	border: 1px solid #1a1a1a;
+	text-decoration: none;
+}
+
+ul#sliding-navigation li.sliding-element a:hover { color: #ffff66; }
+
+
+#nav {
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#nav .active {
+    background-color: #2c9489;
+}
