@@ -14,4 +14,4 @@
 <br>
 
 <h1>Welcome</h1>
-<h1><a href="portfolio.html">Click Here to proceed to my Portfolio</a></h1>
+<h1><a href="portfolio.html">Click Here To Proceed To My Portfolio</a></h1>
