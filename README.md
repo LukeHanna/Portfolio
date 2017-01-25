@@ -1,4 +1,3 @@
-<html>
 <head>
 
 <meta charset="UTF-8">
@@ -34,4 +33,3 @@ others were made in my own time as a way to experiment and further my knowledge 
 <p> Use the navigation bar at the top of this page to browse through my projects</p>
 
 </body>
-</html>
