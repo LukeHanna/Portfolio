@@ -1,5 +1,3 @@
-<head>
-
 <meta charset="UTF-8">
 <meta name="robots" content="noindex" />
 <meta name="robots" content="nofollow" />
@@ -31,5 +29,3 @@
 Web Development Projects that I have created, <br> some are University projects and
 others were made in my own time as a way to experiment and further my knowledge in <br> HTML5, CSS3 & Javascript.</p>
 <p> Use the navigation bar at the top of this page to browse through my projects</p>
-
-</body>
