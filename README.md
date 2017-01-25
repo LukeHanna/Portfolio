@@ -6,7 +6,6 @@
 <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="portfolio.css">
 <link rel="shortcut icon" href="img/logo.ico">
-</head>
 
 <body>
 <br>
