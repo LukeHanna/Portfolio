@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Hobbies & Interests </title>
+<link href="Pages.css" rel="stylesheet" type="text/css">
+
+<!--- Start Javascript --->
+<script src="JQuery/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="JQuery/audiojs/audio.min.js"></script>
+<script type="text/javascript" src="JQuery/Navigation/jquery.js"></script>
+<script type="text/javascript" src="JQuery/Navigation/sliding_effect.js"></script>
+
+<!--- Mouseover script: When you hover your mouse over the text inside #list1
+the color will change from darkblue to black --->
+<script> $(document).ready(function(){
+			$("#list3").mouseover(function(){
+				$("#list3").css("color","black");});
+			$("#list3").mouseout(function(){
+				$("#list3").css("color","darkblue");});
+		});
+</script>
+
+<!--- Audiojs Script: For any <audio> tags the Audio player will change from default
+player to Audiojs Player --->
+<script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
+</script>
+<!--- End Javascript --->
+
+</head>
+
+<body>
+<br>
+
+<ul id="nav">
+  <li><a href="../../portfolio.html">Home</a></li>
+	<li><a href="../../exhibition/index.html">Exhibition</a></li>
+  <li><a href="../../scroller/index.html">Scroller</a></li>
+  <li><a class="active" href="DigitalCV">Digital CV</a></li>
+</ul>
+
+<h1 id="head1" align="center"> Hobbies & Interests</h1>
+
+<!--- Start Div --->
+<div id="JQaudio">
+<audio>
+<source src="Audio/Piano_Audio/Piano_Song(edited).ogg" type="audio/ogg">
+Internet Explorer Sucks - Use Google Chrome !
+</audio>
+</div>
+<br><br>
+<!--- End Div --->
+
+<!--- Start Div --->
+<div id="leftpack">
+<p id="list3" align="left"><br>I enjoy sports on occasion such as: Tennis, Badminton, Basketball, Football, I also enjoy playing Video Games, I can also play the Piano.<br><br> I am very much into Computers, I thoroghly enjoy exploring PC hardware,
+I also enjoy learning about Electronics, Media and Photography.
+I like socialising and frequently go out with mates for a casual meal & to watch a movie.<br><br>
+I have a Jack Russel Dog, she loves playing football and barking at the post man.<br><br></p>
+
+<figure id="lsburoof" class="cap-bot">
+	<img src="Photo/rooftop(edited x2).JPG" alt="">
+	<figcaption>Picture of London South Bank Rooftop Skyline.</figcaption>
+</figure>
+
+<figure id="amscanal" class="cap-bot">
+	<img src="Photo/canal(edited).JPG" alt="">
+	<figcaption>Picture of Amsterdam Canals.</figcaption>
+</figure>
+
+</div>
+<!--- End Div --->
+
+<figure id="tanya" class="cap-bot">
+	<img src="Photo/tanya(edited).jpg" alt="">
+	<figcaption>Picture of my Dog Tanya.</figcaption>
+</figure>
+
+<!--- Start Div --->
+<div id="navigation-block2" style="width:100px;">
+	<ul id="sliding-navigation">
+        <li class="sliding-element"><h3>Navigation Links</h3></li>
+        <li class="sliding-element"><a href="../Welcome_Page.html">Welcome Page</a></li>
+        <li class="sliding-element"><a href="Previous_Education.html">Previous Education</a></li>
+        <li class="sliding-element"><a href="CurrentED_Future.html">Current Education</a></li>
+        <li class="sliding-element"><a href="Hobbies_Interests.html">- - - Hobbies & Interests - - -</a></li>
+        <li class="sliding-element"><a href="Before_Afters.html">Before & Afters</a></li>
+    </ul>
+</div>
+<!--- End Div --->
+
+</body>
+</html>

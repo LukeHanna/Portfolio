@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Current & Future </title>
+<link href="Pages.css" rel="stylesheet" type="text/css">
+
+<!--- Start Javascript --->
+<script src="JQuery/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="JQuery/audiojs/audio.min.js"></script>
+<script type="text/javascript" src="JQuery/Navigation/jquery.js"></script>
+<script type="text/javascript" src="JQuery/Navigation/sliding_effect.js"></script>
+
+<!--- Mouseover script: When you hover your mouse over the text inside #list1
+the color will change from darkblue to black --->
+<script> $(document).ready(function(){
+			$("#list2").mouseover(function(){
+				$("#list2").css("color","black");});
+			$("#list2").mouseout(function(){
+				$("#list2").css("color","darkblue");});
+		});
+</script>
+
+<!--- Audiojs Script: For any <audio> tags the Audio player will change from default
+player to Audiojs Player --->
+<script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
+</script>
+<!--- End Javascript --->
+
+</head>
+
+<body>
+<br>
+
+<ul id="nav">
+  <li><a href="../../portfolio.html">Home</a></li>
+	<li><a href="../../exhibition/index.html">Exhibition</a></li>
+  <li><a href="../../scroller/index.html">Scroller</a></li>
+  <li><a class="active" href="DigitalCV">Digital CV</a></li>
+</ul>
+
+<h1 id="head1" align="center"> Current Education & Future Prospects</h1>
+
+<!--- Start Div --->
+<div id="JQaudio">
+<audio autoplay="autoplay">
+  <source src="Audio/Intro_Audio/Intro_Audio(Edited).ogg" type="audio/ogg">
+Internet Explorer Sucks - Use Google Chrome !
+</audio>
+</div>
+<br><br>
+
+<div id="leftpack">
+<ul  id="list2" align="left">
+<p>I am currently studying at London South Bank University and am in my
+second year of study.</p>
+<p id="headings2" > Modules I studied in the 1st Semester of Year 2 :</p>
+<li>Computing Platform Administration</li>
+<li>System Design Techniques</li>
+<li>Practical Software Engineering</li>
+<p id="headings2" >Modules I am currently studying in the 2nd Semster of Year 2 :</p>
+<li>Multimedia Fundamentals</li>
+<li>Business Database Systems</li>
+<li>HND Project</li>
+<p>I hope to progress into my third year and complete my Degree in
+Multimedia Computing and find a job in Web Development & Multimedia.</p>
+</ul>
+
+<figure id="bikes" class="cap-bot">
+	<img src="Photo/bikes(edited x2).jpg" alt="">
+	<figcaption>Picture of Bicycles in Amsterdam.</figcaption>
+</figure>
+</div>
+<!--- End Div --->
+
+<figure id="amstram" class="cap-bot">
+	<img src="Photo/tram(edited).JPG" alt="">
+	<figcaption>Picture of a Tram in Amsterdam.</figcaption>
+</figure>
+
+<!--- Start Div --->
+<div id="navigation-block1" style="width:100px;">
+	<ul id="sliding-navigation">
+        <li class="sliding-element"><h3>Navigation Links</h3></li>
+        <li class="sliding-element"><a href="../Welcome_Page.html">Welcome Page</a></li>
+        <li class="sliding-element"><a href="Previous_Education.html">Previous Education</a></li>
+		<li class="sliding-element"><a href="CurrentEd_Future.html">- - - Current Education - - -</a></li>
+        <li class="sliding-element"><a href="Hobbies_Interests.html">Hobbies and Interests</a></li>
+        <li class="sliding-element"><a href="Before_Afters.html">Before & Afters</a></li>
+    </ul>
+</div>
+<!--- End Div --->
+</body>
+</html>

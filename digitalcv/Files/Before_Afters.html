@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Befores & Afters </title>
+
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link href="Pages.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8">
+
+<!--- Start Javascript --->
+<script src="JQuery/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="JQuery/slider.js" type="text/javascript" charset="utf-8"></script>
+<script src="JQuery/audiojs/audio.min.js"></script>
+<script type="text/javascript" src="JQuery/Navigation/jquery.js"></script>
+<script type="text/javascript" src="JQuery/Navigation/sliding_effect.js"></script>
+
+<!--- Audiojs Script: For any <audio> tags the Audio player will change from default
+player to Audiojs Player --->
+<script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
+</script>
+
+<!--- MovingBoxes Script: Controls the moving boxes JQuery  --->
+<script>	$(function(){
+
+		$('#slider').movingBoxes({
+			/* width and panelWidth options deprecated, but still work to keep the plugin backwards compatible
+			width: 500,
+			panelWidth: 0.5,
+			*/
+			startPanel   : 1,      // start with this panel
+			wrap         : false,   // if true, the panel will "wrap" (it really rewinds/fast forwards) at the ends
+			buildNav     : true,   // if true, navigation links will be added
+			navFormatter : function(){ return "&#9679;"; } // function which returns the navigation text for each panel
+		});
+
+	});
+</script>
+<!--- End Javascript --->
+</head>
+
+<body>
+
+<br>
+
+<ul id="nav">
+  <li><a href="../../portfolio.html">Home</a></li>
+  <li><a href="../../exhibition/index.html">Exhibition</a></li>
+  <li><a href="../../scroller/index.html">Scroller</a></li>
+  <li><a class="active" href="DigitalCV">Digital CV</a></li>
+</ul>
+
+<h1 id="head1" align="center"> Befores & Afters </h1>
+
+<h2>Before - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - After</h2>
+
+<!--- Start Div --->
+<div id="vids">
+<video id="vidorig" width="500" height="430" controls>
+  <source src="Video/vid1.mp4" type="video/ogg">
+Internet Explorer Sucks ! - Use Google Chrome
+</video>
+</div>
+<!--- End Div --->
+
+<br>
+
+<!--- Start Div --->
+<div id="audbefore">
+<audio>
+  <source src="Audio/Intro_Audio/Intro_Audio.ogg" type="audio/ogg">
+Internet Explorer Sucks ! - Use Google Chrome
+</audio>Original Intro Audio
+
+<audio>
+  <source src="Audio/Piano_Audio/Right_Hand.ogg" type="audio/ogg">
+Internet Explorer Sucks ! - Use Google Chrome
+</audio>Original Piano Right Hand
+
+<audio>
+  <source src="Audio/Piano_Audio/Left_Hand.ogg" type="audio/ogg">
+Internet Explorer Sucks ! - Use Google Chrome
+</audio>Original Piano Left Hand
+</div>
+<!--- End Div --->
+
+<!--- Start Div --->
+<div id="audafter">
+<audio>
+  <source src="Audio/Intro_Audio/Intro_Audio(edited).ogg" type="audio/ogg">
+Internet Explorer Sucks ! - Use Google Chrome
+</audio>Intro Audio, edited with Audaciy
+
+<audio>
+  <source src="Audio/Piano_Audio/Piano_Song(edited).ogg" type="audio/ogg">
+Internet Explorer Sucks ! - Use Google Chrome
+</audio>Piano Audio, edited with Audaciy
+</div>
+<!--- End Div --->
+
+<body>
+
+<!--- Start Div --->
+<!--- MovingBoxes: Images are placed into individual div's, each div is assigned a panel id,
+each panel is controlled by the 'SLIDER' css, the css refers to libraries and functions within
+the slider.js file. The main div below also contains the button images for either side of
+the slider box container, these buttons are used to go back and forth between images in the panels
+using the '.scrollButtons left' class. 'overflow:hidden' makes sure that images that are not within the
+box container viewing area are not shown.--->
+<div id="slider">
+<img class="scrollButtons left" src="Photo/leftarrow.png">
+
+<div style="overflow: hidden;" class="scroll">
+<div class="scrollContainer">
+
+<div class="panel" id="panel_1">
+	<div class="inside">
+	<img src="Photo/gondola.jpg" alt="Original Gondola Photo" />
+		<h2>Gondola</h2>
+			<p>This is the original Photo of the Gondola.</p>
+	</div>
+</div>
+
+<div class="panel" id="panel_2">
+	<div class="inside">
+		<img src="Photo/gondola(edited).jpg" alt="Picture of a Gondola in Venice" />
+			<h2>Gondola Edited</h2>
+				<p>This is a Photo of a Gondola in Venice, I used GIMP to edit it.</p>
+	</div>
+</div>
+
+	                <div class="panel" id="panel_3">
+						<div class="inside">
+							<img src="Photo/vauxhall.JPG" alt="Original Photo of Vauxhall Station" />
+							<h2>Vauxhall</h2>
+							<p>This is the original Photo of Vauxhall Station.</p>
+						</div>
+					</div>
+
+					<div class="panel" id="panel_4">
+						<div class="inside">
+							<img src="Photo/vauxhall(edited).JPG" alt="Photo of Vauxhall Station" />
+							<h2>Vauxhall Edited</h2>
+							<p>This is a Photo of a Vauxhall Station, I used GIMP to edit it.</p>
+						</div>
+					</div>
+
+					<div class="panel" id="panel_5">
+						<div class="inside">
+							<img src="Photo/tram.JPG" alt="Original Photo of a Tram" />
+							<h2>Tram</h2>
+							<p>This is the original Photo of the Tram.</p>
+						</div>
+					</div>
+
+					<div class="panel" id="panel_6">
+						<div class="inside">
+							<img src="Photo/tram(edited).JPG" alt="Photo of Tram" />
+							<h2>Tram Edited</h2>
+							<p>This is a Photo of a Tram in Amsterdam, I used GIMP to edit it.</p>
+						</div>
+					</div>
+
+					<div class="panel" id="panel_7">
+						<div class="inside">
+							<img src="Photo/bikes.jpg" alt="Original Bikes Photo" />
+							<h2>Bikes</h2>
+							<p>This is the originl photo of bikes.</p>
+						</div>
+					</div>
+
+					<div class="panel" id="panel_8">
+						<div class="inside">
+							<img src="Photo/bikes(edited x2).jpg" alt="Edited Bikes Photo" />
+							<h2>Bikes Edited</h2>
+							<p>This is a Photo of Bikes, I used GIMP and pixlr-o-matic to edit it.</p>
+						</div>
+					</div>
+
+					<div class="panel" id="panel_9">
+						<div class="inside">
+							<img src="Photo/tanya.jpg" alt="Original Photo of my Dog Tanya" />
+							<h2>My Dog</h2>
+							<p>This is the original Photo of My Dog Tanya.</p>
+						</div>
+					</div>
+
+					<div class="panel" id="panel_10">
+						<div class="inside">
+							<img src="Photo/tanya(edited).jpg" alt="Original Photo of my Dog Tanya" />
+							<h2>My Dog</h2>
+							<p>This is a Photo of My Dog Tanya, I used GIMP to edit it.</p>
+						</div>
+					</div>
+
+					<div class="panel" id="panel_11">
+						<div class="inside">
+							<img src="Photo/canal.JPG" alt="Original Photo of an amsterdam canal" />
+							<h2>Amsterdam Canal</h2>
+							<p>This is the original Photo of a canal in Amsterdam.</p>
+						</div>
+					</div>
+
+					<div class="panel" id="panel_12">
+						<div class="inside">
+							<img src="Photo/canal(edited).JPG" alt="Amsterdam Canal" />
+							<h2>Amsterdam Canal Edited</h2>
+							<p>This is a photo of a canal in Amsterdam, I used Gimp to edit it.</p>
+						</div>
+					</div>
+
+					<div class="panel" id="panel_13">
+						<div class="inside">
+							<img src="Photo/rooftop.JPG" alt="Original Photo of my LSBU Rooftop" />
+							<h2>LSBU Roof</h2>
+							<p>Original photo of LSBU Rooftop.</p>
+						</div>
+					</div>
+
+					<div class="panel" id="panel_14">
+						<div class="inside">
+							<img src="Photo/rooftop(edited x2).JPG" alt="Photo of LSBU Rooftop" />
+							<h2>LSBU Roof Edited</h2>
+							<p>This is a Photo of the LSBU Rooftop, I used GIMP and pixlr-o-matic to edit it.</p>
+						</div>
+					</div>
+
+                </div>
+
+            </div>
+
+			<img class="scrollButtons right" src="Photo/rightarrow.png">
+
+        </div>
+<!--- End Div --->
+
+<div id="navigation-block3" style="width:100px">
+	<ul id="sliding-navigation">
+        <li class="sliding-element"><h3>Navigation Links</h3></li>
+        <li class="sliding-element"><a href="../Welcome_Page.html">Welcome Page</a></li>
+        <li class="sliding-element"><a href="Previous_Education.html">Previous Education</a></li>
+		<li class="sliding-element"><a href="CurrentEd_Future.html">Current Education</a></li>
+        <li class="sliding-element"><a href="Hobbies_Interests.html">Hobbies and Interests</a></li>
+        <li class="sliding-element"><a href="Before_Afters.html">- - - Before & Afters - - -</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

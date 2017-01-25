@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="robots" content="noindex" />
+<meta name="robots" content="nofollow" />
+
+<title>My Portfolio</title>
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="exhibition.css">
+<link rel="shortcut icon" href="img/logo.ico">
+</head>
+
+<body>
+<br>
+
+
+<ul id="nav">
+  <li><a href="../portfolio.html">Home</a></li>
+  <li><a class="active" href="index.html">Exhibition</a></li>
+  <li><a href="../scroller/index.html">Scroller</a></li>
+  <li><a href="../digitalcv/Welcome_Page.html">Digital CV</a></li>
+</ul>
+
+<br>
+<br>
+
+<h1> Venice, Italy</h1>
+<p> A few photos from Venice</p>
+
+<div id="venice">
+<img id="myImg" src="img/venice/img1.jpg" alt="Canal" width="300" height="200">
+<img id="myImg2" src="img/venice/img2.jpg" alt="Gondolas" width="300" height="200">
+<img id="myImg3" src="img/venice/img3.jpg" alt="Bikes" width="300" height="200">
+<img id="myImg4" src="img/venice/img4.jpg" alt="Coast" width="300" height="200">
+<img id="myImg5" src="img/venice/img5.jpg" alt="Reflection" width="300" height="200">
+<img id="myImg6" src="img/venice/img6.jpg" alt="Contrast" width="300" height="200">
+<img id="myImg7" src="img/venice/img7.jpg" alt="Gondolas" width="300" height="200">
+<img id="myImg8" src="img/venice/img8.jpg" alt="Gondola" width="300" height="200">
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.getElementById('myImg2');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.getElementById('myImg3');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.getElementById('myImg4');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.getElementById('myImg5');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.getElementById('myImg6');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.getElementById('myImg7');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.getElementById('myImg8');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+<br>
+
+<a id="other" href="index.html">Galleries</a>
+<ul class="photo-nav" id="qnav">
+	<li>
+		<a href="amsterdam.html">
+			<figure>
+				<img src="img/amsterdam/img2.jpg" height="180" width="320" alt="Amseterdam">
+				<figcaption><p>Amsterdam Exhibition</p></figcaption>
+			</figure>
+		</a>
+	</li>
+	<li><a href="england.html">
+			<figure>
+				<img src="img/england/img4.jpg" height="180" width="320" alt="England">
+				<figcaption><p>England Exhibition</p></figcaption>
+			</figure>
+		</a>
+	</li>
+</ul>
+
+
+</body>
+</html>
