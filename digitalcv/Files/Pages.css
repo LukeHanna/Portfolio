@@ -176,25 +176,25 @@ div#audafter {						/* Sets the stylings for the audio after div id on the Befor
 #navigation-block {					/*Previous Education */
 	position:relative;
 	top:-880px;
-	left:1030px;
+	left:1330px;
 }
 
 #navigation-block1{					/*Current Education */
 	position:relative;
 	top:-740px;
-	left:1030px;
+	left:1330px;
 }
 
 #navigation-block2{					/*Hobbies & Interests */
 	position:relative;
 	top:-970px;
-	left:1030px;
+	left:1330px;
 }
 
 #navigation-block3{					/*Before & Afters */
 	position:relative;
 	top:-1100px;
-	left:1040px;
+	left:1330px;
 }
 
 #hide {
