@@ -12,6 +12,16 @@
 	font-family:arial
 }
 
+h3 {
+	text-align: center;
+	color: white;
+}
+
+h4 {
+	text-align: center;
+	color: white;
+}
+
 body {						/* Sets the background stylings for the <body> tag */
 	background:#23236B;
 	background-size:100%;
